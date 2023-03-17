@@ -1,4 +1,3 @@
-#!/bin/bash
 #include <stdio.h>
 /**
 * main - printing out the size of computer types
