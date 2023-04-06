@@ -6,7 +6,7 @@
  * @m: given number
  * Return: 1 if not found sqrroot, else sqrroot
  **/
-int sqrtRecursive(int start, int end, int m)
+int sqtRecursive(int start, int end, int m)
 {
 	long middle;
 
@@ -43,5 +43,5 @@ int sqrtRecursive(int start, int end, int m)
 	{
 		return (n);
 	}
-	return (sqrtRecursive(2, n, n));
+	return (sqtRecursive(2, n, n));
 }

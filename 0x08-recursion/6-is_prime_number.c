@@ -22,7 +22,7 @@ int sqtRecursive(int n, int m)
  * @n: given number
  * Return: square root of n or -1
  **/
-int _sqrt_recursion1(int n)
+int _sqrt_recursion(int n)
 {
 	if (n == 1)
 	{
@@ -37,13 +37,13 @@ int _sqrt_recursion1(int n)
  **/
 int is_prime_number(int n)
 {
-	if (n <= 1 || _sqrt_recursion1(n) >= 1)
+	if (n <= 1 || _sqrt_recursion(n) >= 1)
 	{
 		return (0);
 	}
-	if (_sqrt_recursion1(n) == -1)
+	if (_sqrt_recursion(n) == -1)
 	{
 		return (1);
 	}
-	return (_sqrt_recursion1(n));
+	return (_sqrt_recursion(n));
 }
