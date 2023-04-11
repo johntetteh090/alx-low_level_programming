@@ -9,7 +9,7 @@
 char *argstostr(int ac, char **av)
 {
 	char *strDup;
-	int i, j, k, sizee;
+	int i, j, k, size;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -18,14 +18,14 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
-			sizee++;
-		sizee++;
+			size++;
+		size++;
 	}
 	sizee++;
 /* allocate memory for total number of chars and
  * new line for each word
  */
-	strDup = malloc(sizeof(char) * sizee);
+	strDup = malloc(sizeof(char) * size);
 	if (strDup == NULL)
 		return (NULL);
 	k = 0;
