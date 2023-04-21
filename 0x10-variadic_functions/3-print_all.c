@@ -24,7 +24,7 @@ void print_c(va_list list, char *sep)
  * print_s - prints string
  * @sep: seperator
  * @list: list to print
- * Return: none ifit is null
+ * Return: none if it is null
  */
 void print_s(va_list list, char *sep)
 {
