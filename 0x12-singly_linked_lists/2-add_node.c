@@ -1,21 +1,21 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * _strlen - gets length of the string
+ * _strlen - gets length of the string in the list
  * @s: string
- * Return: length of the string
+ * Return: length of the string in the list
  */
 int _strlen(const char *s)
 {
-	int i;
+	int in;
 
-	for (i = 0; s[i]; i++)
+	for (in = 0; s[in]; in++)
 		;
-	return (i);
+	return (in);
 }
 /**
- * add_node - add new nodes to the list
- * @head: current place in the list
+ * add_node - add new nodes to the list as it should be
+ * @head: current place in the list or the top of the list
  * @str: string to add to the head
  * Return: pointer to current position in list
  */
