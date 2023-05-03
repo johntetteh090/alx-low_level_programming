@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print list int safe - define the function
+ * print_listint_safe - define function
  * @head:
  * Return: what does it return?
  */
