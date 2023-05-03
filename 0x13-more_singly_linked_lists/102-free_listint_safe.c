@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_list int_safe - function that frees a listint_t in the list
+ * free_listint_safe - function that frees a listint_t list
  * @h: free
  * Return: return listint
  */
