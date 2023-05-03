@@ -1,9 +1,9 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * add_node int_end - adds a new node at the end of a listint_t list
+ * add_nodeint_end - adds a new node at the end of a listint_t list
  * @head: current place
- * @n: int to add toin the list
+ * @n: int to add to
  * Return: pointer current position
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
@@ -12,9 +12,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
-	{
 		return (NULL);
-	}
 	new->n = n;
 	new->next = NULL;
 	if (*head == NULL)
